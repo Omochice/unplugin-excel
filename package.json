@@ -1,0 +1,110 @@
+{
+  "name": "@omochice/unplugin-excel",
+  "version": "0.1.0",
+  "description": "plugin for bundling excel files with unplugin",
+  "keywords": [
+    "unplugin",
+    "vite",
+    "webpack",
+    "rollup",
+    "transform"
+  ],
+  "repository": "github:Omochice/unplugin-excel",
+  "license": "zlib",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./astro": "./dist/astro.js",
+    "./esbuild": "./dist/esbuild.js",
+    "./farm": "./dist/farm.js",
+    "./nuxt": "./dist/nuxt.js",
+    "./rollup": "./dist/rollup.js",
+    "./rspack": "./dist/rspack.js",
+    "./types": "./dist/types.js",
+    "./vite": "./dist/vite.js",
+    "./webpack": "./dist/webpack.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "check": "npm-run-all2 check:*",
+    "check:biome": "biome ci",
+    "check:package": "sort-package-json --check",
+    "dev": "tsdown -w",
+    "fmt": "npm-run-all2 fmt:*",
+    "fmt:biome": "npm-run-all2 fmt:biome:*",
+    "fmt:biome:check": "biome check --write --unsafe .",
+    "fmt:biome:format": "biome format --write .",
+    "fmt:package": "sort-package-json",
+    "prepack": "clean-pkg-json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "unplugin": "^2.3.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
+    "@nuxt/kit": "^3.17.4",
+    "@nuxt/schema": "^3.17.4",
+    "@types/node": "^22.15.21",
+    "automd": "^0.4.0",
+    "clean-pkg-json": "^1.3.0",
+    "npm-run-all2": "^8.0.4",
+    "rollup": "^4.41.0",
+    "sort-package-json": "^3.4.0",
+    "tsdown": "^0.12.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4",
+    "webpack": "^5.99.9"
+  },
+  "peerDependencies": {
+    "@farmfe/core": ">=1",
+    "@nuxt/kit": "^3",
+    "@nuxt/schema": "^3",
+    "esbuild": "*",
+    "rollup": "^3",
+    "vite": ">=3",
+    "webpack": "^4 || ^5"
+  },
+  "peerDependenciesMeta": {
+    "@farmfe/core": {
+      "optional": true
+    },
+    "@nuxt/kit": {
+      "optional": true
+    },
+    "@nuxt/schema": {
+      "optional": true
+    },
+    "esbuild": {
+      "optional": true
+    },
+    "rollup": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    },
+    "webpack": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@10.11.0"
+}
