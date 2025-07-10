@@ -1,6 +1,6 @@
 {
   "name": "@omochice/unplugin-excel",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "plugin for bundling excel files with unplugin",
   "keywords": [
     "unplugin",
