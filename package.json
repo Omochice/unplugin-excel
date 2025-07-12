@@ -71,7 +71,7 @@
     "sort-package-json": "3.4.0",
     "tsdown": "0.12.9",
     "typescript": "5.8.3",
-    "vite": "6.3.5",
+    "vite": "7.0.4",
     "vitest": "3.2.4",
     "webpack": "5.100.1"
   },
