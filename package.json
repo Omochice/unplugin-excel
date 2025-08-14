@@ -73,7 +73,7 @@
     "typescript": "5.9.2",
     "vite": "7.1.2",
     "vitest": "3.2.4",
-    "webpack": "5.101.1"
+    "webpack": "5.101.2"
   },
   "peerDependencies": {
     "@farmfe/core": ">=1",
