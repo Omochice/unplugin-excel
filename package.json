@@ -63,7 +63,7 @@
     "@biomejs/biome": "2.2.4",
     "@nuxt/kit": "4.1.2",
     "@nuxt/schema": "4.1.2",
-    "@types/node": "22.18.4",
+    "@types/node": "22.18.5",
     "automd": "0.4.0",
     "clean-pkg-json": "1.3.0",
     "npm-run-all2": "8.0.4",
