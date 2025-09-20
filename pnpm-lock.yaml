@@ -49,8 +49,8 @@ importers:
         specifier: 3.4.0
         version: 3.4.0
       tsdown:
-        specifier: 0.15.0
-        version: 0.15.0(typescript@5.9.2)
+        specifier: 0.15.3
+        version: 0.15.3(typescript@5.9.2)
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -1318,6 +1318,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   deep-eql@5.0.2:
     resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
@@ -1956,6 +1965,9 @@ packages:
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
+  magic-string@0.30.19:
+    resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -2200,9 +2212,6 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  quansync@0.2.10:
-    resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
-
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
 
@@ -2253,15 +2262,18 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  rolldown-plugin-dts@0.16.1:
-    resolution: {integrity: sha512-bEfJpvhHm+h2cldNUbj8dT5tF9BJrJawPquScFdodob/55DqYkBis7iar8nkn8wSNIFKxwd2jP9ly/Z7lRME2w==}
+  rolldown-plugin-dts@0.16.6:
+    resolution: {integrity: sha512-OPQKAft45efpjU3ppcI9GyRHAT0otTIdMv0gcoBlcR9B3QssZvTFH6zbT3Ij5x+7ymX5TCPyHb+VIkRYTJrTaA==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
+      '@ts-macro/tsc': ^0.3.6
       '@typescript/native-preview': '>=7.0.0-dev.20250601.1'
       rolldown: ^1.0.0-beta.9
       typescript: ^5.0.0
       vue-tsc: ~3.0.3
     peerDependenciesMeta:
+      '@ts-macro/tsc':
+        optional: true
       '@typescript/native-preview':
         optional: true
       typescript:
@@ -2483,8 +2495,8 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
 
-  tsdown@0.15.0:
-    resolution: {integrity: sha512-xbz8tvdlB2wspocZWcJQhZNDLJC+sKV+sTIpiRgfUiQCUxLFGnUZUPc9KoKp3nfMeXQqTyMi6FM9/SasSj+csQ==}
+  tsdown@0.15.3:
+    resolution: {integrity: sha512-51p2z1F3GBAG9+9J+BNo6rYCvajZ9TAGtFMq/hCwjhvxFbzJ/Py4SHmLNltbraR4QFepW694cZwab33Nb7H2Ew==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -3899,6 +3911,10 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
+  debug@4.4.3:
+    dependencies:
+      ms: 2.1.3
+
   deep-eql@5.0.2: {}
 
   deep-equal@1.0.1: {}
@@ -4549,6 +4565,10 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.4
 
+  magic-string@0.30.19:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
+
   math-intrinsics@1.1.0: {}
 
   md4w@0.2.7: {}
@@ -4696,7 +4716,7 @@ snapshots:
 
   package-manager-detector@0.2.11:
     dependencies:
-      quansync: 0.2.10
+      quansync: 0.2.11
 
   parseurl@1.3.3: {}
 
@@ -4754,8 +4774,6 @@ snapshots:
 
   prettier@2.8.8: {}
 
-  quansync@0.2.10: {}
-
   quansync@0.2.11: {}
 
   queue-microtask@1.2.3: {}
@@ -4802,16 +4820,17 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown-plugin-dts@0.16.1(rolldown@1.0.0-beta.38)(typescript@5.9.2):
+  rolldown-plugin-dts@0.16.6(rolldown@1.0.0-beta.38)(typescript@5.9.2):
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/parser': 7.28.4
       '@babel/types': 7.28.4
       ast-kit: 2.1.2
       birpc: 2.5.0
-      debug: 4.4.1
+      debug: 4.4.3
       dts-resolver: 2.1.2
       get-tsconfig: 4.10.1
+      magic-string: 0.30.19
       rolldown: 1.0.0-beta.38
     optionalDependencies:
       typescript: 5.9.2
@@ -5035,17 +5054,17 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  tsdown@0.15.0(typescript@5.9.2):
+  tsdown@0.15.3(typescript@5.9.2):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
       chokidar: 4.0.3
-      debug: 4.4.1
+      debug: 4.4.3
       diff: 8.0.2
       empathic: 2.0.0
       hookable: 5.5.3
       rolldown: 1.0.0-beta.38
-      rolldown-plugin-dts: 0.16.1(rolldown@1.0.0-beta.38)(typescript@5.9.2)
+      rolldown-plugin-dts: 0.16.6(rolldown@1.0.0-beta.38)(typescript@5.9.2)
       semver: 7.7.2
       tinyexec: 1.0.1
       tinyglobby: 0.2.15
@@ -5054,6 +5073,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.2
     transitivePeerDependencies:
+      - '@ts-macro/tsc'
       - '@typescript/native-preview'
       - oxc-resolver
       - supports-color
