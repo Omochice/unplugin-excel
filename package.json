@@ -70,7 +70,7 @@
     "rollup": "4.52.3",
     "sort-package-json": "3.4.0",
     "tsdown": "0.15.0",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "vite": "7.1.7",
     "vitest": "3.2.4",
     "webpack": "5.102.0"
