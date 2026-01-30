@@ -56,7 +56,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "unplugin": "^2.3.4",
+    "unplugin": "^3.0.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
