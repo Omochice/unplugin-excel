@@ -60,7 +60,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.13",
+    "@biomejs/biome": "2.3.14",
     "@nuxt/kit": "4.3.0",
     "@nuxt/schema": "4.3.0",
     "@types/node": "22.19.8",
