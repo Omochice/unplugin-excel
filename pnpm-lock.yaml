@@ -61,8 +61,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.19.11)(jiti@2.6.1)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0)
       webpack:
-        specifier: 5.105.0
-        version: 5.105.0(esbuild@0.25.6)
+        specifier: 5.105.1
+        version: 5.105.1(esbuild@0.25.6)
 
 packages:
 
@@ -2930,8 +2930,8 @@ packages:
   webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
-  webpack@5.105.0:
-    resolution: {integrity: sha512-gX/dMkRQc7QOMzgTe6KsYFM7DxeIONQSui1s0n/0xht36HvrgbxtM1xBlgx596NbpHuQU8P7QpKwrZYwUX48nw==}
+  webpack@5.105.1:
+    resolution: {integrity: sha512-Gdj3X74CLJJ8zy4URmK42W7wTZUJrqL+z8nyGEr4dTN0kb3nVs+ZvjbTOqRYPD7qX4tUmwyHL9Q9K6T1seW6Yw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -5395,14 +5395,14 @@ snapshots:
 
   term-size@2.2.1: {}
 
-  terser-webpack-plugin@5.3.16(esbuild@0.25.6)(webpack@5.105.0(esbuild@0.25.6)):
+  terser-webpack-plugin@5.3.16(esbuild@0.25.6)(webpack@5.105.1(esbuild@0.25.6)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       serialize-javascript: 6.0.2
       terser: 5.39.2
-      webpack: 5.105.0(esbuild@0.25.6)
+      webpack: 5.105.1(esbuild@0.25.6)
     optionalDependencies:
       esbuild: 0.25.6
 
@@ -5640,7 +5640,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.105.0(esbuild@0.25.6):
+  webpack@5.105.1(esbuild@0.25.6):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.8
@@ -5664,7 +5664,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.16(esbuild@0.25.6)(webpack@5.105.0(esbuild@0.25.6))
+      terser-webpack-plugin: 5.3.16(esbuild@0.25.6)(webpack@5.105.1(esbuild@0.25.6))
       watchpack: 2.5.1
       webpack-sources: 3.3.3
     transitivePeerDependencies:
